@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e7e9eb;
+  width: 100%;
+  font-family: Rubik, Roboto, sans-serif;
+  height: 94vh;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+  background-color: #C8C8C8;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #C8C8C8;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: white;
+}

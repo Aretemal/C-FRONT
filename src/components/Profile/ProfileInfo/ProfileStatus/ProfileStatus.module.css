@@ -1,0 +1,27 @@
+.container{
+    margin-top: 20px;
+    color: black;
+    margin-left: -4px;
+    width: 340px;
+    display: flex;
+    align-items:center;
+}
+.status{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.inputStatus{
+    resize: none;
+    border: none;
+    outline: none;
+    width: 340px;
+    max-width: 370px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #fbfcfc;
+}
+.spanStatus{
+    max-width: 360px;
+}
+
+

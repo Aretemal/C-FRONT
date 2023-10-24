@@ -1,0 +1,114 @@
+.backgroundTree{
+    border-radius: 20px 0 0 20px;
+    grid-area: back;
+    width: 600px;
+    height: 600px;
+}
+.image{
+    border-radius: 10px;
+    width: 500px;
+    height: 350px;
+}
+.form{
+    margin-left: -20px;
+    margin-top: 120px;
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container{
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 360px;
+    height: 600px;
+    width: 900px;
+    display: grid;
+    background-color: rgb(250, 250 , 250);
+    grid-template-areas: "back info";
+}
+.formik{
+    display: flex;
+}
+.or{
+    color: #808080;
+    margin-left: 90px;
+    margin-top: 2px;
+}
+.registration{
+    outline: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    display:flex;
+    align-items:center;
+    border: 1px solid #808080;
+    height: 40px;
+    width: 190px;
+    justify-content:center;
+    text-decoration:none;
+    color: #808080 !important;
+    font-size: 18px;
+}
+.error{
+    color: red;
+    font-size: 20px;
+    margin-top: -9px;
+    margin-left: 10px;
+}
+.name{
+    color: black;
+}
+.itemField{
+    display:flex;
+    align-items:center;
+}
+.field{
+    outline:none;
+    width: 150px;
+    font-size: 15px;
+    border: 1px solid #0d6efd;
+    padding: 6px 0 4px 10px;
+    background: #e8e8e8;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.UserIcon{
+    width: 37px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+}
+.LockIcon{
+    width: 40px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-right: 2px;
+}
+.but{
+    outline: none;
+    margin-top: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    display:flex;
+    align-items:center;
+    border: none;
+    height: 40px;
+    width: 190px;
+    justify-content:center;
+    text-decoration:none;
+    color: white;
+    font-size: 18px;
+}
+.EmailIcon{
+    width: 40px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-right: -1px;
+}
+.NameIcon{
+    width: 40px;
+    padding-bottom: 10px;
+    padding-right: 3px;
+    margin-right: 0px;
+}

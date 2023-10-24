@@ -1,0 +1,37 @@
+.container{
+    grid-area: profInfo;
+    margin-top: 10px;
+    width: 400px;
+    height: 500px;
+    padding-left: 50px;
+    padding-top: 50px;
+    border-radius: 15px;
+    background-color: white;
+    grid-template-areas:"ava" "info" "connection";
+}
+.block-ava{
+    grid-area: ava;
+    width: 300px;
+    height: 300px;
+}
+.block-connection{
+    color: black;
+    margin-left: 90px;
+    font-size: 20px;
+    grid-area: connection;
+}
+.block-description{
+    grid-area: info;
+}
+.block-description_name{
+    display: block;
+    font-size: 37px;
+    color: black;
+}
+.block-description_status-block{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.block-description_status-span{
+    max-width: 360px;
+}
