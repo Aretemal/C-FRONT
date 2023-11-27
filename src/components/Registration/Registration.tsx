@@ -3,7 +3,6 @@ import { Formik, Form, Field } from 'formik';
 import { Navigate, NavLink } from 'react-router-dom';
 import SignupSchema from '../../utils/validators/RegistrationSchema';
 import styles from '../Login/Login.module.css';
-import BackgroundLogin from '../../assets/images/BackgroundLogin.jpg';
 
 interface IProps {
   onRegistration: ({
@@ -19,9 +18,8 @@ const Registration: React.FC<IProps> = ({
     return <Navigate to={`/profile/${authLogin}`} />;
   }
   return (
+      <div className={styles.wrapper}>
     <div className={styles.container}>
-      <img className={styles.backgroundTree} src={BackgroundLogin} alt="BackgroundLogin" />
-      <img className={styles.backgroundTree} src={BackgroundLogin} alt="BackgroundLogin" />
       <Formik
         initialValues={{
           login: '',
@@ -43,8 +41,8 @@ const Registration: React.FC<IProps> = ({
       >
         {({ errors, touched }) => (
           <Form className={styles.form}>
-            <h1 className={styles.title}>Registration</h1>
-            <div className={styles.itemField}>
+            <h1 className={styles.title}>Sign up</h1>
+            <div className={styles['form-item']}>
               <Field
                 className={styles.field}
                 name="login"
@@ -54,7 +52,7 @@ const Registration: React.FC<IProps> = ({
                 <div className={styles.error}>{errors.login}</div>
               ) : null}
             </div>
-            <div className={styles.itemField}>
+            <div className={styles['form-item']}>
               <Field
                 className={styles.field}
                 name="password"
@@ -65,7 +63,7 @@ const Registration: React.FC<IProps> = ({
                 <div className={styles.error}>{errors.password}</div>
               ) : null}
             </div>
-            <div className={styles.itemField}>
+            <div className={styles['form-item']}>
               <Field
                 className={styles.field}
                 name="firstName"
@@ -75,7 +73,7 @@ const Registration: React.FC<IProps> = ({
                 <div className={styles.error}>{errors.firstName}</div>
               ) : null}
             </div>
-            <div className={styles.itemField}>
+            <div className={styles['form-item']}>
               <Field
                 className={`${styles.field}`}
                 name="lastName"
@@ -85,7 +83,7 @@ const Registration: React.FC<IProps> = ({
                 <div className={styles.error}>{errors.lastName}</div>
               ) : null}
             </div>
-            <div className={styles.itemField}>
+            <div className={styles['form-item']}>
               <Field
                 className={styles.field}
                 name="email"
@@ -117,6 +115,7 @@ const Registration: React.FC<IProps> = ({
           </Form>
         )}
       </Formik>
+    </div>
     </div>
   );
 };

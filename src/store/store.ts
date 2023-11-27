@@ -14,6 +14,8 @@ import storage from 'redux-persist/lib/storage';
 import authReducer from './slices/authSlice';
 import rouletteReducer from './slices/rouletteSlice';
 import profileReducer from './slices/profileSlice';
+import adminUsersReducer from './slices/adminUsersSlice';
+import paymentsReducer from './slices/paymentsSlice';
 
 const persistConfig = {
   key: 'root',
@@ -25,6 +27,8 @@ const reducers = combineReducers({
   auth: persistenceReducerAuth,
   roulette: rouletteReducer,
   profile: profileReducer,
+  aUsers: adminUsersReducer,
+  payments: paymentsReducer,
 });
 
 const store = configureStore({

@@ -9,6 +9,7 @@ interface ILRResponse {
   attributes: {
     token: string,
     login: string,
+    role: string,
   },
 }
 interface IAuthenticationData {

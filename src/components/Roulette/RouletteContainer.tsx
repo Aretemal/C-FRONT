@@ -2,6 +2,7 @@ import React from 'react';
 import Roulette from './Roulette';
 import { useAppDispatch, useAppSelector } from '../../hook/hook';
 import { getRouletteResult } from '../../store/slices/thunks/rouletteThunks';
+import {withAuthRedirect} from "../../hoc/WithAuthRedirect";
 
 const RouletteContainer: React.FC = () => {
   const { token } = useAppSelector((state) => state.auth);
@@ -19,4 +20,4 @@ const RouletteContainer: React.FC = () => {
     />
   );
 };
-export default RouletteContainer;
+export default withAuthRedirect(RouletteContainer);

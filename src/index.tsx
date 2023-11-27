@@ -6,6 +6,7 @@ import './index.css';
 import { PersistGate } from 'redux-persist/integration/react';
 import store, { persistor } from './store/store';
 import App from './App';
+import 'react-notifications/lib/notifications.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 

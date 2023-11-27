@@ -9,6 +9,7 @@ const initialState: IAuthInitialState = {
   token: '',
   authLogin: '',
   authId: '',
+  role: '',
   errors: [],
 };
 
@@ -24,6 +25,7 @@ const authSlice = createSlice({
         state.token = '';
         state.isAuth = false;
         state.authId = '';
+        state.role = '';
         state.authLogin = '';
       }
     },

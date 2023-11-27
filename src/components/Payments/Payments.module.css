@@ -1,0 +1,17 @@
+.container {
+    height: 700px;
+    width: 810px;
+    background: url("../../assets/images/BackCity4.png");
+}
+.but{
+    border: none;
+    color: white;
+}
+.but:hover {
+    border: none;
+    color: white;
+}
+.modal {
+    background-color: #995ccd;
+    color: #995ccd;
+}

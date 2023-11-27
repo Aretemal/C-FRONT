@@ -18,6 +18,8 @@ const authExtraReducers = (builder: ActionReducerMapBuilder<IAuthInitialState>) 
       state.errors = [];
       state.authId = action.payload.id;
       state.authLogin = action.payload.attributes.login;
+      state.role = action.payload.attributes.role;
+      console.log(action.payload.attributes.role)
       state.isAuth = true;
     })
     .addCase(registration.fulfilled, (state, action) => {

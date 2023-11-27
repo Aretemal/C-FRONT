@@ -5,5 +5,6 @@ export interface IAuthInitialState {
     isAuth: boolean,
     token: string,
     authId: string,
+    role: string,
     errors: IError[],
 }

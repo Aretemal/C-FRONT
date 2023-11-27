@@ -4,4 +4,7 @@
     width: 70%;
     min-height: 900px;
 }
-
+.wrapper {
+    width: 100%;
+    background: #1d184e;
+}

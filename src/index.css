@@ -2,10 +2,13 @@ body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e7e9eb;
+  /*background: rgb(0,128,0);*/
+  /*background: linear-gradient(180deg, rgba(0,128,0,1) 0%, rgba(32,99,32,1) 40%);*/
+  /*background-image: url("./assets/images/bg.jpg");*/
+  background: #F0F0F0;
   width: 100%;
   font-family: Rubik, Roboto, sans-serif;
-  height: 94vh;
+  height: 100%;
 }
 
 body::-webkit-scrollbar {

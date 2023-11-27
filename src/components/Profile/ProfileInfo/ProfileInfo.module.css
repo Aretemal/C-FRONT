@@ -6,7 +6,7 @@
     padding-left: 50px;
     padding-top: 50px;
     border-radius: 15px;
-    background-color: white;
+    background-color: #373269;
     grid-template-areas:"ava" "info" "connection";
 }
 .block-ava{

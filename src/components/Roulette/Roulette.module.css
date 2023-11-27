@@ -1,12 +1,8 @@
-.container{
-    margin-top: 100px;
+.container {
+    margin-left: 600px;
 }
 
-img.rot{
+image {
     width: 500px;
     height: 500px;
-}
-.img1:hover {
-    transition: 2s;
-    transform: rotate(860deg);
 }
